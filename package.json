@@ -1,0 +1,23 @@
+{
+  "name": "murgi-bot-whatsapp",
+  "version": "1.0.0",
+  "description": "WhatsApp bot per prenotazioni Murgi Sport Tiggiano",
+  "main": "murgi-bot.js",
+  "scripts": {
+    "start": "node murgi-bot.js",
+    "dev": "nodemon murgi-bot.js"
+  },
+  "keywords": ["whatsapp", "twilio", "tennis", "prenotazioni"],
+  "author": "Marco",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "twilio": "^3.95.0",
+    "puppeteer": "^21.1.1",
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
