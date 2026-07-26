@@ -1,0 +1,27 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "murgi-bot.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "murgi-bot.js"
+    }
+  ],
+  "env": {
+    "TWILIO_ACCOUNT_SID": "@twilio_account_sid",
+    "TWILIO_AUTH_TOKEN": "@twilio_auth_token",
+    "TWILIO_PHONE": "@twilio_phone",
+    "NODE_ENV": "production"
+  },
+  "functions": {
+    "murgi-bot.js": {
+      "memory": 3008,
+      "maxDuration": 60
+    }
+  }
+}
